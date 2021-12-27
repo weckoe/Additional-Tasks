@@ -6,8 +6,8 @@
 </head>
 <body>
 {% for student in students%}
-<a>Name: {{ student.name }}</a><br>
-<a>Surname: {{ student.surname }}</a><br>
+<a>Name: {{ student.first_name }}</a><br>
+<a>Surname: {{ student.last_name }}</a><br>
 <a>Grade: {{ student.grade }}</a><br>
 <a>GPA: {{ student.gpa }}</a>
 {% endfor %}
