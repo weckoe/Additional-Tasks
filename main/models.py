@@ -7,13 +7,11 @@ class Student(models.Model):
         max_length=30,
         verbose_name='First name',
         default="",
-        null=True
     )
     last_name = models.CharField(
         max_length=70,
         verbose_name='Last name',
         default="",
-        null=True
     )
     grade = models.IntegerField(
         verbose_name='Grade',
@@ -22,7 +20,6 @@ class Student(models.Model):
             MinValueValidator(0)
         ],
         default="",
-        null=True
     )
     gpa = models.IntegerField(
         verbose_name='GPA',
@@ -31,5 +28,4 @@ class Student(models.Model):
             MinValueValidator(0)
         ],
         default="",
-        null=True
     )
