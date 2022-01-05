@@ -2,7 +2,7 @@ import json
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.core import serializers
-from django.shortcuts import render, redirect
+from rest_framework import status
 from .models import Student
 
 
@@ -35,4 +35,4 @@ def student_edit(request, id):
         return Response(data=serializer)
     if request.method == 'DELETE':
         Student.objects.filter(id=id).delete()
-        return Response()
+        return Response(status=status.HTTP_404_NOT_FOUND)
