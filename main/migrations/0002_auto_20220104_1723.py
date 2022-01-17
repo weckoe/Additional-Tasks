@@ -7,36 +7,52 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('main', '0001_initial'),
+        ("main", "0001_initial"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='student',
-            name='name',
+            model_name="student",
+            name="name",
         ),
         migrations.RemoveField(
-            model_name='student',
-            name='surname',
+            model_name="student",
+            name="surname",
         ),
         migrations.AddField(
-            model_name='student',
-            name='first_name',
-            field=models.CharField(default='', max_length=30, verbose_name='First name'),
+            model_name="student",
+            name="first_name",
+            field=models.CharField(
+                default="", max_length=30, verbose_name="First name"
+            ),
         ),
         migrations.AddField(
-            model_name='student',
-            name='last_name',
-            field=models.CharField(default='', max_length=70, verbose_name='Last name'),
+            model_name="student",
+            name="last_name",
+            field=models.CharField(default="", max_length=70, verbose_name="Last name"),
         ),
         migrations.AlterField(
-            model_name='student',
-            name='gpa',
-            field=models.IntegerField(default='', validators=[django.core.validators.MaxValueValidator(10), django.core.validators.MinValueValidator(0)], verbose_name='GPA'),
+            model_name="student",
+            name="gpa",
+            field=models.IntegerField(
+                default="",
+                validators=[
+                    django.core.validators.MaxValueValidator(10),
+                    django.core.validators.MinValueValidator(0),
+                ],
+                verbose_name="GPA",
+            ),
         ),
         migrations.AlterField(
-            model_name='student',
-            name='grade',
-            field=models.IntegerField(default='', validators=[django.core.validators.MaxValueValidator(11), django.core.validators.MinValueValidator(0)], verbose_name='Grade'),
+            model_name="student",
+            name="grade",
+            field=models.IntegerField(
+                default="",
+                validators=[
+                    django.core.validators.MaxValueValidator(11),
+                    django.core.validators.MinValueValidator(0),
+                ],
+                verbose_name="Grade",
+            ),
         ),
     ]

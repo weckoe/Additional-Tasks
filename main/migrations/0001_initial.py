@@ -8,18 +8,43 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Student',
+            name="Student",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=30, verbose_name='Имя')),
-                ('surname', models.CharField(max_length=70, verbose_name='Фамилия')),
-                ('grade', models.IntegerField(validators=[django.core.validators.MaxValueValidator(11), django.core.validators.MinValueValidator(0)], verbose_name='Класс')),
-                ('gpa', models.IntegerField(validators=[django.core.validators.MaxValueValidator(10), django.core.validators.MinValueValidator(0)], verbose_name='Средний балл')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=30, verbose_name="Имя")),
+                ("surname", models.CharField(max_length=70, verbose_name="Фамилия")),
+                (
+                    "grade",
+                    models.IntegerField(
+                        validators=[
+                            django.core.validators.MaxValueValidator(11),
+                            django.core.validators.MinValueValidator(0),
+                        ],
+                        verbose_name="Класс",
+                    ),
+                ),
+                (
+                    "gpa",
+                    models.IntegerField(
+                        validators=[
+                            django.core.validators.MaxValueValidator(10),
+                            django.core.validators.MinValueValidator(0),
+                        ],
+                        verbose_name="Средний балл",
+                    ),
+                ),
             ],
         ),
     ]
