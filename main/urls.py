@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls importcd path
 from .views import home, student,  student_edit
 
 app_name = 'main'
