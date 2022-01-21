@@ -19,7 +19,11 @@ class TestHomeView(TestCase):
         self.assertEqual(response.status_code, HTTPStatus.OK)
         self.assertEqual(response.data[0]["fields"]["first_name"], "Tom")
 
+<<<<<<< HEAD
     def test_student_edit_patch_view(self) -> None:
+=======
+    def test_student_edit_view(self) -> None:
+>>>>>>> main
         client = Client()
         url = reverse("main:student_edit", kwargs={"id": self.student.id})
         response = client.patch(
@@ -30,7 +34,12 @@ class TestHomeView(TestCase):
         data = json.loads(response.json())
         student = data[0]["fields"]
         self.assertEqual(response.status_code, HTTPStatus.OK)
+<<<<<<< HEAD
         self.assertEqual(student["first_name"], "Kirill")
+=======
+        self.assertEqual(student['first_name'], 'Kirill')
+<<<<<<< HEAD
+>>>>>>> main
 
     def test_student_edit_view(self) -> None:
         client = Client()
@@ -41,3 +50,7 @@ class TestHomeView(TestCase):
             content_type="application/json",
         )
         self.assertEqual(response.status_code, HTTPStatus.NOT_FOUND)
+=======
+        client.delete(url)
+        self.assertEqual(student['first_name'], HTTPStatus.NOT_FOUND)
+>>>>>>> main
