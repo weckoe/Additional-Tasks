@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 18cabd7fd86d622e445e07386302475624e9565e
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "main",
     "rest_framework",
+<<<<<<< HEAD
 =======
     'django.contrib.admin',
     'django.contrib.auth',
@@ -61,6 +65,8 @@ INSTALLED_APPS = [
 >>>>>>> main
 =======
 >>>>>>> main
+=======
+>>>>>>> 18cabd7fd86d622e445e07386302475624e9565e
 ]
 
 MIDDLEWARE = [

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import json
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,6 +36,9 @@ from django.shortcuts import render, redirect
 >>>>>>> 52a835280a1347a7cc50647d06a855e5dd689ccc
 >>>>>>> tests
 >>>>>>> main
+=======
+from django.shortcuts import render
+>>>>>>> 18cabd7fd86d622e445e07386302475624e9565e
 from .models import Student
 
 
@@ -42,6 +46,9 @@ from .models import Student
 def home(request):
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 18cabd7fd86d622e445e07386302475624e9565e
     students = serializers.serialize("json", Student.objects.all())
 =======
 <<<<<<< HEAD
@@ -155,6 +162,7 @@ def student_edit(request, id):
 >>>>>>> main
 <<<<<<< HEAD
         return Response(status=status.HTTP_404_NOT_FOUND)
+<<<<<<< HEAD
 =======
         return Response()
 <<<<<<< HEAD
@@ -164,3 +172,5 @@ def student_edit(request, id):
 >>>>>>> 52a835280a1347a7cc50647d06a855e5dd689ccc
 >>>>>>> tests
 >>>>>>> main
+=======
+>>>>>>> 18cabd7fd86d622e445e07386302475624e9565e
