@@ -1,9 +1,12 @@
 import json
 <<<<<<< HEAD
+<<<<<<< HEAD
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.core import serializers
 from rest_framework import status
+=======
+>>>>>>> 52a835280a1347a7cc50647d06a855e5dd689ccc
 =======
 <<<<<<< HEAD
 from django.urls import reverse
@@ -17,10 +20,19 @@ from rest_framework.serializers import ModelSerializer
 from rest_framework.views import APIView
 
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> main
+>>>>>>> 52a835280a1347a7cc50647d06a855e5dd689ccc
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.core import serializers
 from django.shortcuts import render, redirect
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 52a835280a1347a7cc50647d06a855e5dd689ccc
 >>>>>>> tests
 >>>>>>> main
 from .models import Student
@@ -94,5 +106,10 @@ def student_edit(request, id):
         return Response(status=status.HTTP_404_NOT_FOUND)
 =======
         return Response()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 52a835280a1347a7cc50647d06a855e5dd689ccc
 >>>>>>> tests
 >>>>>>> main
