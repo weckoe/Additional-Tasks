@@ -39,6 +39,9 @@ class TestHomeView(TestCase):
 =======
         self.assertEqual(student['first_name'], 'Kirill')
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 
     def test_student_edit_view(self) -> None:

@@ -28,5 +28,8 @@ urlpatterns = [
     path('student_edit/<int:id>', student_edit, name='student_edit')
 >>>>>>> tests
 >>>>>>> main
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 ]

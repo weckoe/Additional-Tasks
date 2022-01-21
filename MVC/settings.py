@@ -57,6 +57,9 @@ INSTALLED_APPS = [
     'rest_framework',
 >>>>>>> tests
 >>>>>>> main
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 ]
 

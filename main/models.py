@@ -10,6 +10,9 @@ class Student(models.Model):
 =======
         verbose_name='First name',
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
         default="",
 =======
@@ -34,6 +37,9 @@ class Student(models.Model):
         default='',
         null=True
 =======
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
         default="",
 >>>>>>> tests
@@ -50,6 +56,9 @@ class Student(models.Model):
             MinValueValidator(0)
         ],
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
         default="",
 =======
@@ -77,6 +86,9 @@ class Student(models.Model):
 <<<<<<< HEAD
         default='',
         null=True
+=======
+<<<<<<< HEAD
+>>>>>>> main
 =======
 >>>>>>> main
         default="",

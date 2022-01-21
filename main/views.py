@@ -41,9 +41,12 @@ from .models import Student
 @api_view(["GET"])
 def home(request):
 <<<<<<< HEAD
+<<<<<<< HEAD
     students = serializers.serialize("json", Student.objects.all())
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> main
     students = serializers.serialize('json', Student.objects.all())
 >>>>>>> main
     return Response(json.loads(students))
@@ -79,6 +82,9 @@ def student(request):
 =======
         serializer = serializers.serialize('json', [new_student, ])
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
         return Response(data=json.loads(serializer))
 =======
@@ -107,12 +113,26 @@ def student_edit(request, id):
 =======
 <<<<<<< HEAD
         return Response(json.loads(serializer))
+<<<<<<< HEAD
+=======
     if request.method == 'PATCH':
         updated_student, _ = Student.objects.filter(id=id).update_or_create(**request.data)
         serializer = serializers.serialize('json', [updated_student, ])
         return Response(json.loads(serializer))
     if request.method == 'DELETE':
         Student.objects.filter(id=id).delete()
+        return redirect(reverse('main:student'))
+=======
+>>>>>>> main
+        return Response(data=serializer)
+>>>>>>> main
+    if request.method == 'PATCH':
+        updated_student, _ = Student.objects.filter(id=id).update_or_create(**request.data)
+        serializer = serializers.serialize('json', [updated_student, ])
+        return Response(json.loads(serializer))
+    if request.method == 'DELETE':
+        Student.objects.filter(id=id).delete()
+<<<<<<< HEAD
         return redirect(reverse('main:student'))
 =======
 >>>>>>> main
@@ -131,6 +151,8 @@ def student_edit(request, id):
         return Response(data=serializer)
     if request.method == "DELETE":
         Student.objects.filter(id=id).delete()
+=======
+>>>>>>> main
 <<<<<<< HEAD
         return Response(status=status.HTTP_404_NOT_FOUND)
 =======
