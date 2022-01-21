@@ -16,7 +16,7 @@ urlpatterns = [
     path('student/', student, name='student'),
 <<<<<<< HEAD
     path('student_edit/<int:id>', student_edit, name='student_edit')
-=======
+======
 <<<<<<< HEAD
     path('student_edit/<int:id>', student_edit, name='student_edit'),
 =======
