@@ -2,9 +2,3 @@
 __pycache__
 .idea
 db.sqlite3
-node_modules
-chat.html
-client.py
-js
-js_file.js
-server.py
