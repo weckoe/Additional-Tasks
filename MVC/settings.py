@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -40,27 +39,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "main",
     "rest_framework",
-=======
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'main',
-<<<<<<< HEAD
-    'rest_framework',
-=======
-<<<<<<< HEAD
-    'rest_framework'
-=======
-    'rest_framework',
->>>>>>> tests
->>>>>>> main
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
 ]
 
 MIDDLEWARE = [
